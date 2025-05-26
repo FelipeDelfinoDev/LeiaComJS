@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8vh 1rem 2rem;
+  min-height: 92vh;
+  box-sizing: border-box;
+  background: url("../../images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.tituloLivro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.pesquisaLivro {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.sugestoes {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sugestoes input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+}
+
+#sugestoesLivros {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  z-index: 500;
+}
+
+.cartaoLivro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  padding: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+#tituloLivro {
+  color: #fff;
+}
+
+#autorLivro {
+  color: #fff;
+}
+
+#tituloLivro,
+#autorLivro {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#downloadLivro {
+  display: flex;
+  gap: 1rem;
+}
+
+#downloadEPUB,
+#lerOnline {
+  flex: 1;
+}
+
+#downloadEPUB a:hover,
+#lerOnline a:hover {
+  color: #0056b3;
+}

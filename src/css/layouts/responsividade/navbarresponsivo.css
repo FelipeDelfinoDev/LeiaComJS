@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo {
+    margin-right: auto;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+
+  .navlist {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    background: none;
+    max-height: none;
+    overflow: visible;
+    transition: none;
+    order: 3;
+  }
+
+  .navlist li {
+    margin-left: 32px;
+    padding: 0;
+    letter-spacing: 3px;
+  }
+
+  .navlist.ativo {
+    max-height: none;
+  }
+
+  .mobilemenu {
+    display: none;
+  }
+}

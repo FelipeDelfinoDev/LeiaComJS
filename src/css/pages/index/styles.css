@@ -1,0 +1,4 @@
+@import "../../layouts/reset.css";
+@import "../../layouts/navbar.css";
+@import "../../layouts/responsividade/navbarresponsivo.css";
+@import "../index/pesquisa.css";
