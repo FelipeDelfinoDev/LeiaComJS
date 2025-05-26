@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="./src/css/pages/index/styles.css" />
+    <title>LeiaCom</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">LeiaCom</a>
+
+        <div class="mobilemenu" id="mobilemenu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="navlist" id="navlist">
+          <li><a href="/index.html">inicio</a></li>
+          <li><a href="/sobre.html">sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="pesquisaLivro">
+          <h1 class="tituloLivro">Buscar livros</h1>
+
+          <div class="sugestoes">
+            <input
+              type="text"
+              id="buscadorLivros"
+              placeholder="Digite o nome do livro..."
+              autocomplete="off"
+            />
+            <div id="sugestoesLivros" class="listaSugestoesLivros"></div>
+          </div>
+
+          <article id="detalhesLivro" class="cartaoLivro hidden">
+            <div class="capaLivro" id="capaLivro"></div>
+
+            <div class="informacoesLivro">
+              <h2 id="tituloLivro" class="tituloLivro"></h2>
+              <p id="autorLivro" class="autorLivro"></p>
+              <div id="downloadLivro" class="downloadLivro">
+                <div id="downloadEPUB"></div>
+                <div id="lerOnline"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="/src/scripts/shared/navbar.js"></script>
+    <script src="/src/scripts/pages/index/buscarlivros.js"></script>
+  </body>
+</html>
